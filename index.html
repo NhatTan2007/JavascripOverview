@@ -7,10 +7,11 @@
 </head>
 <body>
       <button id="showMessage">Click me</button>
+      <div id="content"></div>
       <script>
             document.getElementById("showMessage").addEventListener("click",showMessage);
             function showMessage(){
-                  alert("Hello my friend")
+                  document.getElementById("content").innerHTML = "Chào bạn nhé!"
             }
       </script>
 </body>
